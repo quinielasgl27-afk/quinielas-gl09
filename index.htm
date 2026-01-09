@@ -1,31 +1,100 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Quinielas GL</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+  margin: 0;
+  background: #0a3d2e;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 12px;
+}
 
-  <div class="app">
-    <img src="https://i.imgur.com/uQfdvMz.jpeg" class="logo">
+.logo {
+  display: block;
+  margin: 0 auto 15px;
+  width: 220px;
+}
 
-    <h1>Quinielas GL</h1>
+.partido {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin: 8px 0;
+}
 
-    <p id="contador"></p>
-    <p>Costo por quiniela: $10</p>
+.partido button {
+  margin: 0 3px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
 
-    <div id="partidos"></div>
+.seleccionado {
+  background: gold;
+  color: black;
+}
 
-    <div class="acciones">
-      <button onclick="aleatorio()">Aleatorio</button>
-      <button onclick="limpiar()">Limpiar</button>
-      <button onclick="reiniciar()">Reiniciar</button>
-    </div>
-  </div>
+.whatsapp {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+El jue, 8 de ene de 2026, 8:35 p.m., Gerardo Lopez <quinielasgl27@gmail.com> escribió:
+body {
+  margin:0;
+  background: #0a3d2e;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding:12px;
+  text-align:center;
+}
+
+.logo {
+  text-alin:center;
+  margin-bottom:15px;
+  width: 220px;
+
+ 
+}
+
+.partido {
+  display: grid;
+  grid-template-columns:1fr auto 1fr;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.partido button {
+  margin: 0 3px;
+  padding: 6px 10px;
+  cursor:pointer;
+}
+
+.seleccionado {
+  background: gold;
+  color:white;
+}
+
+.whatsapp {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  background: green;
+  color: white;
+  text-decoration: none;
+}
